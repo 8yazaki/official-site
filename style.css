@@ -61,6 +61,7 @@ main {
 	width: 100ex;
 	margin: auto;
 	overflow: auto;
+	border-radius: 8px;
 }
 
 main h2 {
