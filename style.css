@@ -1,143 +1,81 @@
 @charset "UTF-8";
 
-
-
-/* 全体リセット　ここから　*/
-* {
-	margin: 0;
-	padding: 0;
-}
-li {
-	list-style: none;
-}
-html,body {
-	height: 100%;
-}
-/* 全体リセット　ここまで　*/
-
 body {
-	background-color: #0166FF;
+  background-color: #0166ff;
+  margin: 0;
+  font-family: "Rounded Mplus 1c";
+  color: #333;
 }
 
-/*ヘッダー*/
 header {
-	text-align: center;
-	width: 100ex;
-	margin: 0 auto;
+  margin-left: 15px;
 }
 
 h1 {
-	display: inline-block;
-	width: 30%;
-	float: left;
+  margin: 0;
+  box-sizing: border-box;
+  float: left;
 }
 h1 img {
-	width: 100%;
+  width: 300px;
+}
+.sns-button {
+  float: right;
+  margin: 60px 30px;
+}
+.sns-button img {
+  width: 50px;
+  margin: 0 5px;
 }
 
-
-nav {
-	display: inline-block;
-	float: right;
-	width: 65%;
-	margin-top: 20px;
-}
-
-
-nav li {
-	float: left;
-	margin: 0 5px 10px 5px;
-}
-
-nav li img {
-	width: 100px;
-}
-
-
-
-/* メイン */
 main {
-	background-color: #D6E1FF;
-	clear: both;
-	width: 100ex;
-	margin: auto;
-	overflow: auto;
-	border-radius: 8px;
+  clear: both;
+  overflow: auto;
+  margin: 5px;
 }
 
-main h2 {
-	width: 100%;
-	text-align: center;
-	margin: 15px 0;
+h2 {
+  background-color: #0100ff;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3em;
 }
 
-main > div {
-	float: left;
-	width: 42%;
-	margin: 2% 2% 40px 2%;
+.main-right{
+  float: right;
+  width: calc(30vw - 5px);
+  box-sizing: border-box;
+  background-color: #b8cafb;
+  border-top-left-radius: 8px 8px;
+  border-top-right-radius: 6px 8px;
+  border-bottom-right-radius: 8px 8px;
+  border-bottom-left-radius: 8px 8px;
 }
 
-main .indent {
-	margin-left: 10px;
-}
-
-/* フッター */
-footer {
-	clear: both;
-	margin-top: 20px;
-	text-align: center;
-	font-size: 0.9em;
-	color: #fff;
+.mr-newsong ul,.mr-profile h3,.mr-profile p,.mr-concept h3,.mr-concept p,.mr-contact h3,.mr-contact p {
+  padding: 0 8px;
 }
 
 
-/*ページ別トップ*/
-.top main .align-right li {
-	list-style: initial;
-}
+.mr-newsong ul {
+  margin: 0;
 
-/*ページ別プロフィール*/
-.profile table {
-	border: 1px solid #ccc;
-	background-color: #fff;
-	border-collapse: collapse;
 }
-.profile th,.profile td {
-	border: 1px solid #ccc;
-	padding: 3px;
-}
-.profile th {
-	white-space: nowrap;
-}
+.mr-newsong li {
+  list-style: none;
 
-/*ページ別公開曲*/
-.free-music main .align-left article {
-	clear: both;
-	position: static;
-	overflow: auto;
-	margin: 10px 0;
 }
-.free-music main .align-left article > div {
-	width: 38%;
-	float: left;
-	margin-right: 10px;
+.mr-newsong li img {
+  width: 30%;
+  float: left;
+  margin-right: 10px;
+  min-width: 100px;
 }
-.free-music main .align-left article img {
-	width: 100%;
-}
-.free-music main .align-left article audio {
-	width: 260%;
-	position: relative;
-	top: -7px;
-	left: 0;
-	opacity:0.8;
-}
-.free-music main .align-left article a {
-	font-size: 0.8em;
+.mr-newsong li a {
+  font-size: 0.8em;
 	text-align: center;
 	display: inline-block;
-	width: 38%;
-	margin-top: 20px;
+	width: 50%;
 	padding: 5px 0;
 	background-color: #0166ff;
 	color: #fff;
@@ -148,83 +86,253 @@ footer {
   border-bottom-right-radius: 30px 30px;
   border-bottom-left-radius: 30px 30px;
 }
-.free-music main .align-right {
-	font-size: 0.8em;
+.mr-newsong li audio {
+  width: 100%;
 }
+
+.mr-newsong .listlink {
+  display: none;
+}
+
+.mr-profile table,.mr-profile th,.mr-profile td {
+  margin: 0 15px;
+  border: solid 1px #0100ff;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+.main-left{
+  float: left;
+  width: calc(70vw - 5px);
+  box-sizing: border-box;
+}
+
+.ml-music{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.ml-music h2 {
+  display: none;
+}
+.ml-music article {
+  float: left;
+  overflow: auto;
+  height: auto;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 19%;
+  min-width: 210px;
+  max-width: 300px;
+}
+.ml-music article div {
+  position: relative;
+}
+.ml-music article img {
+  width: 100%;
+  border-top-left-radius: 8px 8px;
+  border-top-right-radius: 6px 8px;
+  border-bottom-right-radius: 8px 8px;
+  border-bottom-left-radius: 8px 8px;
+}
+.ml-music article audio {
+  width: 100%;
+  bottom: 0;
+}
+.ml-music article h4 {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 33px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  color:#fff;
+  margin: 0;
+  padding: 5px;
+  font-size: 0.9em;
+}
+.ml-music article .mask {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  bottom: 65px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(255,255,255,0.8);
+  padding-bottom: 15px;
+  /* color: #fff; */
+  -webkit-transition:	all 0.5s ease;
+	transition:		all 0.5s ease;
+}
+.music:hover .mask {
+  opacity: 1;
+  padding-bottom: 30px;
+}
+.ml-music article span a {
+  font-size: 0.8em;
+	text-align: center;
+	display: inline-block;
+	width: 80%;
+	padding: 5px 0;
+	background-color: #0166ff;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	border-top-left-radius: 30px 30px;
+  border-top-right-radius: 30px 30px;
+  border-bottom-right-radius: 30px 30px;
+  border-bottom-left-radius: 30px 30px;
+}
+.ml-music .license {
+  display: block;
+  float: left;
+  background-color: #b8cafb;
+  overflow: auto;
+  padding: 5px;
+  border-top-left-radius: 8px 8px;
+  border-top-right-radius: 6px 8px;
+  border-bottom-right-radius: 8px 8px;
+  border-bottom-left-radius: 8px 8px;
+  max-width: 390px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.ml-twitter{
+  float: left;
+  width: 300px;
+  box-sizing: border-box;
+
+}
+
+.head {
+  font-weight: bold;
+  cursor: pointer;
+}
+.row{
+  display: none;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #0100ff;
+  color: #fff;
+  margin-top: 15px;
+}
+footer p {
+  margin: 0;
+}
+
 
 
 /* レスポンシブ　スマホ用　ここから*/
 @media screen and (max-width: 479px) {
-	/*ヘッダー*/
-	header {
-		width: 100%;
-		background-color: #0166FF;
-		position: fixed;
-		z-index: 100000;
-		height: 85px;
-	}
-	h1 {
-		display: inline-block;
-		width: 30%;
-		float: left;
-		margin: 5px 0 0 5px;
-	}
-	h1 img {
-		width: 100%;
-	}
-	nav {
-		float: right;
-		width: 65%;
-		margin: 5px 5px 0 0;
-	}
-	nav ul {
-		display: inline-block;
-	}
-	nav li {
-		display: inline;
-		margin: 0;
-		float: none;
-	}
-	nav li img {
-		width: 23%;
-	}
+  header {
+    width: 100%;
+    height: 85px;
+    margin: 0;
+  }
+  header h1 {
+    width: 40%;
+    float: left;
+    margin: 5px 0 0 5px;
+    box-sizing: border-box;
+  }
+  header h1 img {
+    width: 100%;
+  }
+  header .sns-button {
+    width: 55%;
+    margin: 0;
+    float: right;
+    text-align: right;
+    box-sizing: border-box;
+  }
+  header .sns-button img {
+    margin: 40px 15px 0 0;
+    width: 30px;
+  }
+  main {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+  }
+  main audio {
+    margin-top: 5px;
+  }
+  .main-right,.main-left,.ml-music,.ml-twitter {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  .mr-newsong li a {
+    display: none;
+  }
+  .mr-newsong .listlink {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px 10px 50px 10px;
+    padding: 5px 0;
+    background-color: #0166ff;
+    color: #fff;
+    border-top-left-radius: 30px 30px;
+    border-top-right-radius: 30px 30px;
+    border-bottom-right-radius: 30px 30px;
+    border-bottom-left-radius: 30px 30px;
 
-	/*メイン*/
-	main {
-		width: 100%;
-		height: auto;
-		position: relative;
-		top: 85px;
-	}
-	main > div {
-		width: 95%;
-	}
-	main .align-right {
-		margin-top: 30px;
-	}
+  }
+  .ml-twitter {
+    width: 90%;
+  }
+  .ml-music h2 {
+    display: block;
+  }
+  .ml-music article {
+    width: 100%;
+    margin: 0;
+    max-width: none;
+    background-color: #b8cafb;
+    margin-bottom:5px;
+    color: #333;
+  }
 
+  .ml-music article h4 {
+    width: auto;
+    position: static;
+    display: inline-block;
+    background-color: unset;
+    text-align: none;
+    color: #333;
+  }
+  .ml-music article .mask {
+    opacity: 1;
+    background-color: unset;
+    width: 100%;
+    position: static;
+    padding-bottom: 0;
+    text-align: left;
 
-	/*フッター*/
-	footer {
-		margin: 0;
-		font-size: 1em;
-		padding: 5px 0;
-	}
-
-	/*ページ別*/
-	/*メイン　トップページ*/
-	.top 	main > div {
-		max-width: 85%;
-	}
-	.top main ul {
-		margin-left: 20px;
-	}
-
-	/*メイン　公開曲*/
-	.free-music main .align-left article audio {
-		top: 0;
-		margin-bottom: 20px;
-	}
-
+  }
+  .ml-music article img {
+    width: 30%;
+    float: left;
+    margin-right: 10px;
+  }
+  .ml-music article span a {
+    display: none;
+  }
+  .ml-music article audio {
+    width: 100%;
+    position: static;
+  }
+  .ml-music .license {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
 }
-/* レスポンシブ　スマホ用　ここまで*/
