@@ -41,12 +41,14 @@ h2 {
   font-size: 1.3em;
   border-top-left-radius: 8px 8px;
   border-top-right-radius: 8px 8px;
+  margin: 0 0 5px 0;
 }
 
 .main-right{
   float: right;
   width: calc(30vw - 5px);
   box-sizing: border-box;
+  min-width: 363px;
 
 }
 
@@ -57,12 +59,16 @@ h2 {
   border-bottom-right-radius: 8px 8px;
   border-bottom-left-radius: 8px 8px;
   padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .mr-newsong ul,.mr-profile h3,.mr-profile p,.mr-concept h3,.mr-concept p,.mr-contact h3,.mr-contact p {
   padding: 0 8px;
 }
 
+.mr-newsong {
+  display: none;
+}
 
 .mr-newsong ul {
   margin: 0;
@@ -216,11 +222,9 @@ h2 {
   box-sizing: border-box;
 }
 
-.ml-twitter{
-  float: left;
-  width: 300px;
+.mr-twitter{
+  width: 100%;
   box-sizing: border-box;
-
 }
 
 .head {
@@ -280,10 +284,13 @@ footer p {
   main audio {
     margin-top: 5px;
   }
-  .main-right,.main-left,.ml-music,.ml-twitter {
+  .main-right,.main-left,.ml-music {
     float: none;
     width: 100%;
     padding: 0;
+  }
+  .mr-newsong {
+    display: block;
   }
   .mr-newsong li a {
     display: none;
@@ -303,9 +310,9 @@ footer p {
 
   }
 
-  .ml-twitter {
+  .mr-twitter {
     width: 90%;
-    margin: 20px auto;
+    margin: 2px auto;
 
   }
   .ml-music h2 {
