@@ -44,39 +44,25 @@ h2 {
   margin: 0 0 5px 0;
 }
 
+/* ===右側　ここから=== */
 .main-right{
   float: right;
-  width: calc(30vw - 5px);
+  width: 350px;
   box-sizing: border-box;
-  min-width: 363px;
-
 }
 
-.mr-contents{
-  background-color: #b8cafb;
-  border-top-left-radius: 8px 8px;
-  border-top-right-radius: 8px 8px;
-  border-bottom-right-radius: 8px 8px;
-  border-bottom-left-radius: 8px 8px;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
 
-.mr-newsong ul,.mr-profile h3,.mr-profile p,.mr-concept h3,.mr-concept p,.mr-contact h3,.mr-contact p {
-  padding: 0 8px;
-}
-
+/* 最新公開曲　ここから */
 .mr-newsong {
   display: none;
 }
-
 .mr-newsong ul {
   margin: 0;
-
+  padding: 0 8px;
+  text-align: left;
 }
 .mr-newsong li {
   list-style: none;
-
 }
 .mr-newsong li img {
   width: 30%;
@@ -111,10 +97,29 @@ h2 {
 .mr-newsong li audio {
   width: 100%;
 }
-
 .mr-newsong .listlink {
   display: none;
 }
+/* 最新公開曲　ここまで */
+
+.mr-contents{
+  background-color: #b8cafb;
+  border-top-left-radius: 8px 8px;
+  border-top-right-radius: 8px 8px;
+  border-bottom-right-radius: 8px 8px;
+  border-bottom-left-radius: 8px 8px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.mr-contact {
+  text-align: center;
+}
+.mr-contents h3,.mr-contents p {
+  padding: 0 8px;
+  text-align: left;
+}
+
 
 .mr-profile table,.mr-profile th,.mr-profile td {
   margin: 0 15px;
@@ -122,17 +127,39 @@ h2 {
   border-collapse: collapse;
   padding: 5px;
 }
+.mr-profile th {
+  word-break: keep-all;
+}
 
+.mr-twitter{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 折りたたみコンテンツ用　ここから */
+.head {
+  font-weight: bold;
+  cursor: pointer;
+}
+.row{
+  display: none;
+}
+/* 折りたたみコンテンツ用　ここまで */
+
+/* ===右側　ここまで=== */
+
+
+/* ===左側　ここから=== */
 .main-left{
   float: left;
-  width: calc(70vw - 5px);
+  width: calc(100vw - 375px);
   box-sizing: border-box;
 }
 
 .ml-music{
   width: 100%;
   box-sizing: border-box;
-  padding: 0 15px;
+  padding: 0;
 }
 .ml-music h2 {
   display: none;
@@ -144,7 +171,7 @@ h2 {
   box-sizing: border-box;
   padding: 5px;
   width: 19%;
-  min-width: 210px;
+  min-width: 180px;
   max-width: 300px;
 }
 .ml-music article div {
@@ -188,6 +215,9 @@ h2 {
   -webkit-transition:	all 0.5s ease;
 	transition:		all 0.5s ease;
 }
+.ml-music article .mask p {
+  font-size: 0.8em;
+}
 .music:hover .mask {
   opacity: 1;
   padding-bottom: 30px;
@@ -221,19 +251,9 @@ h2 {
   margin: 5px;
   box-sizing: border-box;
 }
+/* ===左側　ここまで=== */
 
-.mr-twitter{
-  width: 100%;
-  box-sizing: border-box;
-}
 
-.head {
-  font-weight: bold;
-  cursor: pointer;
-}
-.row{
-  display: none;
-}
 
 footer {
   clear: both;
@@ -250,7 +270,7 @@ footer p {
 
 
 /* レスポンシブ　スマホ用　ここから*/
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 667px) {
   header {
     width: 100%;
     height: 85px;
@@ -325,6 +345,7 @@ footer p {
     background-color: #b8cafb;
     margin-bottom:5px;
     color: #333;
+    font-size: 1.2em;
   }
 
   .ml-music article h4 {
