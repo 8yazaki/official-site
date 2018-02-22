@@ -170,9 +170,13 @@ h2 {
   height: auto;
   box-sizing: border-box;
   padding: 5px;
-  width: 19%;
-  min-width: 180px;
-  max-width: 300px;
+}
+
+/* グリット */
+.ml-music {
+  display: grid;
+  grid-template-columns:  repeat( auto-fit, minmax(210px, 1fr) );
+  grid-gap: 10px;
 }
 .ml-music article div {
   position: relative;
@@ -214,6 +218,8 @@ h2 {
   /* color: #fff; */
   -webkit-transition:	all 0.5s ease;
 	transition:		all 0.5s ease;
+  border-top-left-radius: 8px 8px;
+  border-top-right-radius: 8px 8px;
 }
 .ml-music article .mask p {
   font-size: 0.8em;
@@ -237,7 +243,7 @@ h2 {
   border-bottom-right-radius: 30px 30px;
   border-bottom-left-radius: 30px 30px;
 }
-.ml-music .license {
+.main-left .license {
   display: block;
   float: left;
   background-color: #b8cafb;
