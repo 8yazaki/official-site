@@ -118,8 +118,12 @@ h2 {
 .mr-contact {
   text-align: center;
 }
-.mr-contents h3,.mr-contents p {
+.mr-contents h3 {
   padding: 0 8px;
+  text-align: left;
+}
+.mr-contents p {
+  padding: 0 8px 0 18px;
   text-align: left;
 }
 
