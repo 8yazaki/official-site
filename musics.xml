@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <music_list>
 	<music>
+		<title>ココナラ用サンプル曲</title>
+		<comment>ココナラ出品用のサンプル曲です</comment>
+		<mp3>music/20171124_coconala_bgm_sample.mp3</mp3>
+		<jacket>img/music/noimage.gif</jacket>
+		<createdate>
+			<year>2017</year>
+			<month>11</month>
+			<day>24</day>
+		</createdate>
+	</music>
+	<music>
 		<title>睡眠誘導曲8mix</title>
 		<comment>癒される音で眠気を促されるかもしれません♪</comment>
 		<mp3>music/20170319_sleepsong_8mix.mp3</mp3>
