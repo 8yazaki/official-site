@@ -1,0 +1,434 @@
+@charset "UTF-8";
+
+body {
+  background-color: #0166ff;
+  margin: 0;
+  font-family: "Rounded Mplus 1c";
+  color: #333;
+}
+
+header {
+  padding: 20px;
+}
+
+h1 {
+  float: left;
+  background-image: url("img/top-logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 250px;
+  height: 177px;
+}
+h1 img {
+  width: 250px;
+}
+.sns-button {
+  float: right;
+  margin: 108px 30px 0;
+}
+.sns-button img {
+  width: 50px;
+  margin: 0 5px;
+}
+
+main {
+  clear: both;
+  overflow: auto;
+  margin: 5px;
+}
+
+h2 {
+  background-color: #0100ff;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3em;
+  border-top-left-radius: 8px 8px;
+  border-top-right-radius: 8px 8px;
+  margin: 0 0 5px 0;
+}
+
+/* ===右側　ここから=== */
+.main-right{
+  float: right;
+  width: 350px;
+  box-sizing: border-box;
+}
+
+
+/* 最新公開曲　ここから */
+.mr-newsong {
+  display: none;
+}
+.mr-newsong ul {
+  margin: 0;
+  padding: 0 8px;
+  text-align: left;
+}
+.mr-newsong li {
+  list-style: none;
+}
+.mr-newsong li img {
+  width: 30%;
+  float: right;
+  margin-left: 20px;
+  min-width: 100px;
+  border-top-left-radius: 8px 8px;
+  border-top-right-radius: 8px 8px;
+  border-bottom-right-radius: 8px 8px;
+  border-bottom-left-radius: 8px 8px;
+}
+.mr-newsong li p {
+  padding: 5px 0 0 10px;
+}
+.mr-newsong li a {
+  font-size: 0.8em;
+	text-align: center;
+	display: inline-block;
+	width: 50%;
+	padding: 5px 0 0 10px;
+	background-color: #0166ff;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	border-top-left-radius: 30px 30px;
+  border-top-right-radius: 30px 30px;
+  border-bottom-right-radius: 30px 30px;
+  border-bottom-left-radius: 30px 30px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+.mr-newsong li audio {
+  width: 100%;
+}
+.mr-newsong .listlink {
+  display: none;
+}
+/* 最新公開曲　ここまで */
+
+.mr-contents{
+  background-color: #b8cafb;
+  border-top-left-radius: 8px 8px;
+  border-top-right-radius: 8px 8px;
+  border-bottom-right-radius: 8px 8px;
+  border-bottom-left-radius: 8px 8px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.mr-contact {
+  text-align: center;
+}
+.mr-contents h3 {
+  padding: 0 8px;
+  text-align: left;
+}
+.mr-contents p {
+  padding: 0 8px 0 18px;
+  text-align: left;
+}
+
+.mr-profile {
+  background-image: url("img/profile.png");
+  background-position: 85% 68%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.mr-profile .concept {
+  background-color: rgba(184, 202, 251, 0.8);
+}
+
+.mr-contents table,.mr-contents th,.mr-contents td {
+  margin: 0 15px;
+  border: solid 1px #0100ff;
+  border-collapse: collapse;
+  padding: 5px;
+}
+.mr-contents th {
+  word-break: keep-all;
+}
+
+.mr-machine {
+  background-image: url("img/machine.jpg");
+  background-position: 95% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.mr-twitter{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 折りたたみコンテンツ用　ここから */
+.head {
+  font-weight: bold;
+  cursor: pointer;
+}
+.row{
+  display: none;
+}
+/* 折りたたみコンテンツ用　ここまで */
+
+/* ===右側　ここまで=== */
+
+
+/* ===左側　ここから=== */
+.main-left{
+  width: calc(100vw - 375px);
+  box-sizing: border-box;
+}
+
+.ml-music{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+}
+.ml-music h2 {
+  display: none;
+}
+.ml-music article {
+  float: left;
+  overflow: auto;
+  height: auto;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+/* グリット */
+.ml-music {
+  display: grid;
+  grid-template-columns:  repeat( auto-fit, minmax(210px, 1fr) );
+  grid-gap: 10px;
+}
+.ml-music article div {
+  position: relative;
+}
+.ml-music article img {
+  width: 100%;
+  border-top-left-radius: 8px 8px;
+  border-top-right-radius: 8px 8px;
+  border-bottom-right-radius: 8px 8px;
+  border-bottom-left-radius: 8px 8px;
+}
+.ml-music article audio {
+  width: 100%;
+  bottom: 0;
+}
+.ml-music article h4 {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 33px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  color:#fff;
+  margin: 0;
+  padding: 5px;
+  font-size: 0.9em;
+}
+.ml-music article .mask {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  bottom: 65px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(255,255,255,0.8);
+  padding-bottom: 15px;
+  /* color: #fff; */
+  -webkit-transition:	all 0.5s ease;
+	transition:		all 0.5s ease;
+  border-top-left-radius: 8px 8px;
+  border-top-right-radius: 8px 8px;
+}
+.ml-music article .mask p {
+  font-size: 0.8em;
+  padding: 0 5px;
+}
+.music:hover .mask {
+  opacity: 1;
+  padding-bottom: 30px;
+}
+.ml-music article span a {
+  font-size: 0.8em;
+	text-align: center;
+	display: inline-block;
+	width: 80%;
+	padding: 5px 0;
+	background-color: #0166ff;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	border-top-left-radius: 30px 30px;
+  border-top-right-radius: 30px 30px;
+  border-bottom-right-radius: 30px 30px;
+  border-bottom-left-radius: 30px 30px;
+}
+.main-left .license {
+  display: block;
+  float: left;
+  background-color: #b8cafb;
+  overflow: auto;
+  border-top-left-radius: 8px 8px;
+  border-top-right-radius: 8px 8px;
+  border-bottom-right-radius: 8px 8px;
+  border-bottom-left-radius: 8px 8px;
+  max-width: 400px;
+  margin: 5px;
+  width: 90%;
+  box-sizing: border-box;
+}
+.main-left .license div {
+  padding: 5px;
+}
+/* ===左側　ここまで=== */
+
+
+
+footer {
+  clear: both;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #0100ff;
+  color: #fff;
+  margin-top: 15px;
+}
+footer p {
+  margin: 0;
+}
+
+
+
+/* レスポンシブ　スマホ用　ここから*/
+@media screen and (max-width: 667px) {
+  header {
+    width:  90%;
+    height: 85px;
+    margin: 0;
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  header h1 {
+    width: 40%;
+    height: 90px;
+    float: left;
+    margin: 5% 0 0 5%;
+    box-sizing: border-box;
+  }
+  header h1 img {
+    width: 100%;
+  }
+  header .sns-button {
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 60px;
+    float: right;
+    text-align: right;
+    box-sizing: border-box;
+  }
+  header .sns-button img {
+    margin: 0 1%;
+    width: 15%;
+  }
+  main {
+    margin: 20px 0 0 0;
+    padding: 0;
+    font-size: 0.9em;
+  }
+  main audio {
+    margin-top: 5px;
+  }
+  .mr-contents {
+    width: 90%;
+    margin: 8% auto;
+  }
+  .main-right,.main-left,.ml-music {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  .mr-newsong {
+    display: block;
+  }
+  .mr-newsong li a {
+    display: none;
+  }
+  .mr-newsong .listlink {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px 10px;
+    padding: 5px 0;
+    background-color: #0166ff;
+    color: #fff;
+    border-top-left-radius: 30px 30px;
+    border-top-right-radius: 30px 30px;
+    border-bottom-right-radius: 30px 30px;
+    border-bottom-left-radius: 30px 30px;
+
+  }
+
+  .mr-twitter {
+    margin: 2px auto;
+  }
+  .main-left {
+    margin-top: 10%;
+  }
+  .ml-music h2 {
+    display: block;
+  }
+  .ml-music article {
+    width: 90%;
+    margin: 0 auto;
+    max-width: none;
+    background-color: #b8cafb;
+    margin-bottom:5px;
+    color: #333;
+    font-size: 1.2em;
+    border-top-left-radius: 8px 8px;
+    border-top-right-radius: 8px 8px;
+    border-bottom-right-radius: 8px 8px;
+    border-bottom-left-radius: 8px 8px;
+  }
+
+  .ml-music article h4 {
+    width: auto;
+    position: static;
+    display: inline-block;
+    background-color: unset;
+    text-align: none;
+    color: #333;
+  }
+  .ml-music article .mask {
+    opacity: 1;
+    background-color: unset;
+    width: 100%;
+    position: static;
+    padding-bottom: 0;
+    text-align: left;
+
+  }
+  .ml-music article img {
+    width: 30%;
+    float: right;
+    margin-left: 10px;
+  }
+  .ml-music article span a {
+    display: none;
+  }
+  .ml-music article audio {
+    width: 100%;
+    position: static;
+  }
+  .main-left .license {
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    box-sizing: border-box;
+    font-size: 0.9em;
+  }
+}
