@@ -27,8 +27,11 @@ a {
 
 /* 折りたたみコンテンツ用　ここまで */
 
-body {
+.all {
   padding:  1% 8%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 /* ヘッダー　ここから */
@@ -46,12 +49,26 @@ header {
   margin-right: 16px;
 }
 header h1 {
+  background-image: url("img/top-logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+  display: block;
+  margin-bottom: 45px;
+  margin-top: 10px;
+}
+header h1 p {
+  position: relative;
+  top: 158px;
+  font-size: 0.5em;
   text-align: center;
 }
-header h1 img {
+/* header h1 img {
   width: 68%;
   margin: 5% auto;
-}
+} */
 header .sns-button {
   text-align: center;
 }
@@ -191,6 +208,7 @@ main .musics article {
   height: auto;
   box-sizing: border-box;
   padding: 8px;
+
 }
 /* グリット */
 main .musics {
@@ -215,7 +233,7 @@ main .musics article audio {
 main .musics article h4 {
   box-sizing: border-box;
   position: absolute;
-  bottom: 33px;
+  bottom: 43px;
   left: 0;
   text-align: center;
   width: 100%;
@@ -229,7 +247,7 @@ main .musics article .mask {
   opacity: 0;
   display: block;
   position: absolute;
-  bottom: 65px;
+  bottom: 75px;
   left: 0;
   text-align: center;
   width: 100%;
@@ -243,7 +261,8 @@ main .musics article .mask {
 }
 main .musics article .mask p {
   font-size: 0.8em;
-  padding: 0 5px;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 .music:hover .mask {
   opacity: 1;
@@ -291,7 +310,7 @@ footer {
   clear: both;
   background-color: #0066ff;
   color: #fff;
-  width: calc(100vw - 40px);
+  width: 100%;
   margin-top: 30px;
 }
 footer p {
@@ -305,7 +324,7 @@ footer p {
 
 /* レスポンシブ　スマホ用　ここから*/
 @media screen and (max-width: 667px) {
-  body {
+  .all {
     padding: 1% 20px;
   }
   header,main {
@@ -317,6 +336,9 @@ footer p {
   }
   header .newsong,.newsong .listlink {
     display: block;
+  }
+  header .newsong a {
+    display: none;
   }
   header .twitter {
     display: none;
@@ -357,9 +379,12 @@ footer p {
     background-color: unset;
     width: 100%;
     position: static;
-    padding-bottom: 0;
     text-align: left;
+    display: inline;
 
+  }
+  main .music:hover .mask {
+    padding-bottom: 0;
   }
   main .musics article img {
     width: 30%;
