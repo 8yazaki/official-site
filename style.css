@@ -333,6 +333,7 @@ footer p {
   header {
     margin-right: 0;
     margin-bottom: 16px;
+    max-width: 100%;
   }
   header .newsong,.newsong .listlink {
     display: block;
