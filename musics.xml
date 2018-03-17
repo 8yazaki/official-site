@@ -4,7 +4,7 @@
 		<title>ココナラ用サンプル曲</title>
 		<comment>ココナラ出品用のサンプル曲です</comment>
 		<mp3>music/20171124_coconala_bgm_sample.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/music/coconala_sample.jpg</jacket>
 		<createdate>
 			<year>2017</year>
 			<month>11</month>
@@ -15,7 +15,7 @@
 		<title>睡眠誘導曲8mix</title>
 		<comment>癒される音で眠気を促されるかもしれません♪</comment>
 		<mp3>music/20170319_sleepsong_8mix.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/music/sleepsong_8mix.jpg</jacket>
 		<createdate>
 			<year>2017</year>
 			<month>06</month>
@@ -26,7 +26,7 @@
 		<title>聖域</title>
 		<comment>神秘的な場所をイメージした曲です</comment>
 		<mp3>music/121105_seiiki.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/music/seiiki.jpg</jacket>
 		<createdate>
 			<year>2014</year>
 			<month>03</month>
@@ -37,7 +37,7 @@
 		<title>CraftBGM</title>
 		<comment>クラフトゲーム用BGMです</comment>
 		<mp3>music/20140308_CraftBGM.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/music/craftbgm.jpg</jacket>
 		<createdate>
 			<year>2014</year>
 			<month>03</month>
@@ -59,7 +59,7 @@
 		<title>懐かしい記憶</title>
 		<comment>ニコ生BGM用に作った曲です</comment>
 		<mp3>music/20131029_natsukashii.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/music/natsukashii.jpg</jacket>
 		<createdate>
 			<year>2013</year>
 			<month>10</month>
@@ -70,7 +70,7 @@
 		<title>2525BGM</title>
 		<comment>ニコ生BGM用に作った曲です</comment>
 		<mp3>music/131022_2525bgm.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/music/2525bgm.jpg</jacket>
 		<createdate>
 			<year>2013</year>
 			<month>10</month>
@@ -81,7 +81,7 @@
 		<title>追憶</title>
 		<comment><a href="http://www.nicovideo.jp/watch/sm20468955" target="_blank">歌詞朗読動画用</a>に作った曲です</comment>
 		<mp3>music/130114-120211_tsuioku.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/music/tsuioku.jpg</jacket>
 		<createdate>
 			<year>2013</year>
 			<month>04</month>
@@ -92,7 +92,7 @@
 		<title>Non Title 01</title>
 		<comment>DJ用に作った依頼曲です</comment>
 		<mp3>music/NonTitle01.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/music/nontitle01.jpg</jacket>
 		<createdate>
 			<year>2012</year>
 			<month>10</month>
@@ -114,7 +114,7 @@
 		<title>HipHop</title>
 		<comment>HipHop系の曲です</comment>
 		<mp3>music/hiphop.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/music/hiphop.jpg</jacket>
 		<createdate>
 			<year>2012</year>
 			<month>10</month>
@@ -125,7 +125,7 @@
 		<title>BGM（ループ曲）</title>
 		<comment>雑談放送系のBGM曲です</comment>
 		<mp3>music/bgm-loop.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/music/bgm-loop.jpg</jacket>
 		<createdate>
 			<year>2012</year>
 			<month>10</month>
@@ -213,7 +213,7 @@
 		<title>ありがとう</title>
 		<comment>作曲依頼品です</comment>
 		<mp3>music/arigato.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/music/arigato.jpg</jacket>
 		<createdate>
 			<year>2011</year>
 			<month>09</month>

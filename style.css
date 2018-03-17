@@ -5,6 +5,9 @@
   padding: 0;
   margin: 0;
 }
+body {
+  font-family: "Rounded Mplus 1c";
+}
 a {
   color: #fff;
 }
@@ -16,6 +19,9 @@ a {
 .row{
   display: none;
 }
+.head span {
+  text-decoration: none;
+}
 .head span::after {
   font-size: 0.8em;
   content: " ▼";
@@ -23,6 +29,16 @@ a {
 .head span.open::after {
   font-size: 0.8em;
   content: " ▲";
+}
+b.head span {
+  font-size: 1em;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  display: block;
+  font-weight: normal;
+}
+p.row{
+  margin-bottom: 10px;
 }
 
 /* 折りたたみコンテンツ用　ここまで */
@@ -79,11 +95,11 @@ header .sns-button img {
 
 header .h-contents {
   padding: 5px;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 header .h-contents h2 {
   font-size: 1.2em;
-  margin: 10px 0 3px 0;
+  margin: 20px 0 3px 0;
   /* text-align: center; */
 }
 header .h-contents h3 {
@@ -91,11 +107,11 @@ header .h-contents h3 {
   margin: 10px 0 5px 10px ;
 }
 header p {
-  padding: 0 20px;
+  padding: 0 0 0 13px;
 }
 header .profile {
   background-image: url("img/profile.png");
-  background-position: 85% 68%;
+  background-position: 100% 68%;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -228,7 +244,10 @@ main .musics article img {
 }
 main .musics article audio {
   width: 100%;
-  bottom: 0;
+}
+main .musics article .audio {
+  width: 100%;
+  bottom: 7px;
 }
 main .musics article h4 {
   box-sizing: border-box;
