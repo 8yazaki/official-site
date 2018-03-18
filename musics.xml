@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <music_list>
 	<music>
+		<title>ココナラ用サンプル曲</title>
+		<comment>ココナラ出品用のサンプル曲です</comment>
+		<mp3>music/20171124_coconala_bgm_sample.mp3</mp3>
+		<jacket>img/jacket/coconala_sample.jpg</jacket>
+		<createdate>
+			<year>2017</year>
+			<month>11</month>
+			<day>24</day>
+		</createdate>
+	</music>
+	<music>
 		<title>睡眠誘導曲8mix</title>
 		<comment>癒される音で眠気を促されるかもしれません♪</comment>
 		<mp3>music/20170319_sleepsong_8mix.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/jacket/sleepsong_8mix.jpg</jacket>
 		<createdate>
 			<year>2017</year>
 			<month>06</month>
@@ -15,7 +26,7 @@
 		<title>聖域</title>
 		<comment>神秘的な場所をイメージした曲です</comment>
 		<mp3>music/121105_seiiki.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/jacket/seiiki.jpg</jacket>
 		<createdate>
 			<year>2014</year>
 			<month>03</month>
@@ -26,7 +37,7 @@
 		<title>CraftBGM</title>
 		<comment>クラフトゲーム用BGMです</comment>
 		<mp3>music/20140308_CraftBGM.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/jacket/craftbgm.jpg</jacket>
 		<createdate>
 			<year>2014</year>
 			<month>03</month>
@@ -37,7 +48,7 @@
 		<title>酒とタバコ</title>
 		<comment>お酒とタバコが進む曲です</comment>
 		<mp3>music/20140308_saketotabako.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/jacket/noimage.gif</jacket>
 		<createdate>
 			<year>2014</year>
 			<month>03</month>
@@ -48,7 +59,7 @@
 		<title>懐かしい記憶</title>
 		<comment>ニコ生BGM用に作った曲です</comment>
 		<mp3>music/20131029_natsukashii.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/jacket/natsukashii.jpg</jacket>
 		<createdate>
 			<year>2013</year>
 			<month>10</month>
@@ -59,7 +70,7 @@
 		<title>2525BGM</title>
 		<comment>ニコ生BGM用に作った曲です</comment>
 		<mp3>music/131022_2525bgm.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/jacket/2525bgm.jpg</jacket>
 		<createdate>
 			<year>2013</year>
 			<month>10</month>
@@ -70,7 +81,7 @@
 		<title>追憶</title>
 		<comment><a href="http://www.nicovideo.jp/watch/sm20468955" target="_blank">歌詞朗読動画用</a>に作った曲です</comment>
 		<mp3>music/130114-120211_tsuioku.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/jacket/tsuioku.jpg</jacket>
 		<createdate>
 			<year>2013</year>
 			<month>04</month>
@@ -81,7 +92,7 @@
 		<title>Non Title 01</title>
 		<comment>DJ用に作った依頼曲です</comment>
 		<mp3>music/NonTitle01.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/jacket/nontitle01.jpg</jacket>
 		<createdate>
 			<year>2012</year>
 			<month>10</month>
@@ -92,7 +103,7 @@
 		<title>NeURoSiS</title>
 		<comment>動画BGM用に作った曲です</comment>
 		<mp3>music/NeURoSiS.mp3</mp3>
-		<jacket>img/music/NeURoSiS.jpg</jacket>
+		<jacket>img/jacket/NeURoSiS.jpg</jacket>
 		<createdate>
 			<year>2012</year>
 			<month>10</month>
@@ -103,7 +114,7 @@
 		<title>HipHop</title>
 		<comment>HipHop系の曲です</comment>
 		<mp3>music/hiphop.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/jacket/hiphop.jpg</jacket>
 		<createdate>
 			<year>2012</year>
 			<month>10</month>
@@ -114,7 +125,7 @@
 		<title>BGM（ループ曲）</title>
 		<comment>雑談放送系のBGM曲です</comment>
 		<mp3>music/bgm-loop.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/jacket/bgm-loop.jpg</jacket>
 		<createdate>
 			<year>2012</year>
 			<month>10</month>
@@ -122,10 +133,10 @@
 		</createdate>
 	</music>
 	<music>
-		<title>Real Shot（ループ曲）</title>
+		<title>Real Shot</title>
 		<comment>動画BGM用に作った曲です</comment>
 		<mp3>music/realshot.mp3</mp3>
-		<jacket>img/music/realshot.jpg</jacket>
+		<jacket>img/jacket/realshot.jpg</jacket>
 		<createdate>
 			<year>2012</year>
 			<month>08</month>
@@ -136,7 +147,7 @@
 		<title>歩こう</title>
 		<comment>VOCALOID初作品です</comment>
 		<mp3>music/120508-120713_arukou.mp3</mp3>
-		<jacket>img/music/arukou.jpg</jacket>
+		<jacket>img/jacket/arukou.jpg</jacket>
 		<createdate>
 			<year>2012</year>
 			<month>07</month>
@@ -147,7 +158,7 @@
 		<title>春風</title>
 		<comment>春風を感じさせる曲です</comment>
 		<mp3>music/120518_harukaze.mp3</mp3>
-		<jacket>img/music/harukaze.jpg</jacket>
+		<jacket>img/jacket/harukaze.jpg</jacket>
 		<createdate>
 			<year>2012</year>
 			<month>06</month>
@@ -158,7 +169,7 @@
 		<title>White</title>
 		<comment>White Dayに作った曲です</comment>
 		<mp3>music/White.mp3</mp3>
-		<jacket>img/music/White.jpg</jacket>
+		<jacket>img/jacket/White.jpg</jacket>
 		<createdate>
 			<year>2012</year>
 			<month>03</month>
@@ -169,7 +180,7 @@
 		<title>111127試作品3</title>
 		<comment>試作品です</comment>
 		<mp3>music/prototype3.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/jacket/noimage.gif</jacket>
 		<createdate>
 			<year>2011</year>
 			<month>11</month>
@@ -180,7 +191,7 @@
 		<title>全</title>
 		<comment>シンプルな曲です</comment>
 		<mp3>music/zen.mp3</mp3>
-		<jacket>img/music/zen.jpg</jacket>
+		<jacket>img/jacket/zen.jpg</jacket>
 		<createdate>
 			<year>2011</year>
 			<month>11</month>
@@ -191,7 +202,7 @@
 		<title>天空城</title>
 		<comment>天空城を想像した曲です</comment>
 		<mp3>music/tenkuujou.mp3</mp3>
-		<jacket>img/music/tenkuujou.jpg</jacket>
+		<jacket>img/jacket/tenkuujou.jpg</jacket>
 		<createdate>
 			<year>2011</year>
 			<month>09</month>
@@ -202,7 +213,7 @@
 		<title>ありがとう</title>
 		<comment>作曲依頼品です</comment>
 		<mp3>music/arigato.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/jacket/arigato.jpg</jacket>
 		<createdate>
 			<year>2011</year>
 			<month>09</month>
@@ -213,7 +224,7 @@
 		<title>110603試作品2</title>
 		<comment>試作品です</comment>
 		<mp3>music/prototype2.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/jacket/noimage.gif</jacket>
 		<createdate>
 			<year>2011</year>
 			<month>06</month>
@@ -224,7 +235,7 @@
 		<title>いちご牛乳</title>
 		<comment>いちご牛乳を想像した曲です</comment>
 		<mp3>music/strawberry_milk.mp3</mp3>
-		<jacket>img/music/strawberry_milk.jpg</jacket>
+		<jacket>img/jacket/strawberry_milk.jpg</jacket>
 		<createdate>
 			<year>2011</year>
 			<month>03</month>
@@ -235,7 +246,7 @@
 		<title>仙</title>
 		<comment>仙山を想像した曲です</comment>
 		<mp3>music/sen.mp3</mp3>
-		<jacket>img/music/sen.jpg</jacket>
+		<jacket>img/jacket/sen.jpg</jacket>
 		<createdate>
 			<year>2011</year>
 			<month>03</month>
@@ -246,7 +257,7 @@
 		<title>維新</title>
 		<comment>維新を想像した曲です</comment>
 		<mp3>music/ishin.mp3</mp3>
-		<jacket>img/music/ishin.jpg</jacket>
+		<jacket>img/jacket/ishin.jpg</jacket>
 		<createdate>
 			<year>2009</year>
 			<month>11</month>
@@ -257,7 +268,7 @@
 		<title>記憶</title>
 		<comment>とある想いを込めた曲です</comment>
 		<mp3>music/kioku.mp3</mp3>
-		<jacket>img/music/kioku.jpg</jacket>
+		<jacket>img/jacket/kioku.jpg</jacket>
 		<createdate>
 			<year>2009</year>
 			<month>05</month>
@@ -268,7 +279,7 @@
 		<title>090308試作品</title>
 		<comment>試作品です</comment>
 		<mp3>music/prototype1.mp3</mp3>
-		<jacket>img/music/noimage.gif</jacket>
+		<jacket>img/jacket/noimage.gif</jacket>
 		<createdate>
 			<year>2009</year>
 			<month>03</month>
@@ -279,7 +290,7 @@
 		<title>祈</title>
 		<comment>祈りを想像した曲です</comment>
 		<mp3>music/inori.mp3</mp3>
-		<jacket>img/music/inori.jpg</jacket>
+		<jacket>img/jacket/inori.jpg</jacket>
 		<createdate>
 			<year>2009</year>
 			<month>01</month>
@@ -290,7 +301,7 @@
 		<title>2009 Start</title>
 		<comment>始まりを決意した曲です</comment>
 		<mp3>music/2009start.mp3</mp3>
-		<jacket>img/music/yazaki.jpg</jacket>
+		<jacket>img/jacket/yazaki.jpg</jacket>
 		<createdate>
 			<year>2009</year>
 			<month>01</month>

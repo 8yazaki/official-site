@@ -1,143 +1,297 @@
 @charset "UTF-8";
 
-
-
-/* 全体リセット　ここから　*/
+/* リセット */
 * {
-	margin: 0;
-	padding: 0;
+  padding: 0;
+  margin: 0;
 }
-li {
-	list-style: none;
-}
-html,body {
-	height: 100%;
-}
-/* 全体リセット　ここまで　*/
-
 body {
-	background-color: #0166FF;
+  font-family: "Rounded Mplus 1c";
+}
+a {
+  color: #fff;
+}
+/* 折りたたみコンテンツ用　ここから */
+.head {
+  font-weight: bold;
+  cursor: pointer;
+}
+.row{
+  display: none;
+}
+.head span {
+  text-decoration: none;
+}
+.head span::after {
+  font-size: 0.8em;
+  content: " ▼";
+}
+.head span.open::after {
+  font-size: 0.8em;
+  content: " ▲";
+}
+b.head span {
+  font-size: 1em;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  display: block;
+  font-weight: normal;
+}
+p.row{
+  margin-bottom: 10px;
 }
 
-/*ヘッダー*/
+/* 折りたたみコンテンツ用　ここまで */
+
+.all {
+  padding:  1% 8%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* ヘッダー　ここから */
 header {
-	text-align: center;
-	width: 100ex;
-	margin: 0 auto;
+  background-color: #0066ff;
+  color: #fff;
+  max-width: 380px;
+  padding: 10px;
+  border-top-left-radius: 8px 8px;
+  border-top-right-radius: 8px 8px;
+  border-bottom-right-radius: 8px 8px;
+  border-bottom-left-radius: 8px 8px;
+  box-sizing: border-box;
+  float: left;
+  margin-right: 16px;
+}
+header h1 {
+  background-image: url("img/top-logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+  display: block;
+  margin-bottom: 45px;
+  margin-top: 10px;
+}
+header h1 p {
+  position: relative;
+  top: 158px;
+  font-size: 0.5em;
+  text-align: center;
+}
+/* header h1 img {
+  width: 68%;
+  margin: 5% auto;
+} */
+header .sns-button {
+  text-align: center;
+}
+header .sns-button img {
+  width: 10%;
+  margin: 5px 2%;
 }
 
-h1 {
+header .h-contents {
+  padding: 5px;
+  font-size: 1em;
+}
+header .h-contents h2 {
+  font-size: 1.2em;
+  margin: 20px 0 3px 0;
+  /* text-align: center; */
+}
+header .h-contents h3 {
+  font-size: 1em;
+  margin: 10px 0 5px 10px ;
+}
+header p {
+  padding: 0 0 0 13px;
+}
+header .profile {
+  background-image: url("img/profile.png");
+  background-position: 100% 68%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+header .concept {
+  background-color: rgba(00, 102, 255, 0.8);
+}
+
+header .machine {
+  background-image: url("img/machine.jpg");
+  background-position: 95% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+header .h-contents table,header .h-contents th,header .h-contents td {
+  margin: 0 15px;
+  border: solid 1px #0100ff;
+  border-collapse: collapse;
+  padding: 5px;
+  font-size: 0.98em;
+}
+header .h-contents th {
+  word-break: keep-all;
+}
+header .coconala {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* 最新公開曲　ここから */
+.newsong,.newsong .listlink {
+  display: none;
+}
+.newsong ul {
+  margin: 0;
+  text-align: left;
+}
+.newsong li {
+  color: #0066ff;
+  list-style: none;
+  background-color: #fff;
+  border-top-left-radius: 8px 8px;
+  border-top-right-radius: 8px 8px;
+  border-bottom-right-radius: 8px 8px;
+  border-bottom-left-radius: 8px 8px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.newsong li img {
+  width: 30%;
+  float: right;
+  margin-left: 5px;
+  min-width: 100px;
+  border-top-left-radius: 8px 8px;
+  border-top-right-radius: 8px 8px;
+  border-bottom-right-radius: 8px 8px;
+  border-bottom-left-radius: 8px 8px;
+}
+.newsong li p {
+  padding: 5px 0 0 10px;
+}
+.newsong li a {
+  font-size: 0.8em;
+	text-align: center;
 	display: inline-block;
-	width: 30%;
-	float: left;
-}
-h1 img {
-	width: 100%;
-}
-
-
-nav {
-	display: inline-block;
-	float: right;
-	width: 65%;
-	margin-top: 20px;
-}
-
-
-nav li {
-	float: left;
-	margin: 0 5px 10px 5px;
-}
-
-nav li img {
-	width: 100px;
-}
-
-
-
-/* メイン */
-main {
-	background-color: #D6E1FF;
-	clear: both;
-	width: 100ex;
-	margin: auto;
-	overflow: auto;
-	border-radius: 8px;
-}
-
-main h2 {
-	width: 100%;
-	text-align: center;
-	margin: 15px 0;
-}
-
-main > div {
-	float: left;
-	width: 42%;
-	margin: 2% 2% 40px 2%;
-}
-
-main .indent {
-	margin-left: 10px;
-}
-
-/* フッター */
-footer {
-	clear: both;
-	margin-top: 20px;
-	text-align: center;
-	font-size: 0.9em;
+	width: 50%;
+	padding: 5px 0 0 10px;
+	background-color: #0066ff;
 	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	border-top-left-radius: 30px 30px;
+  border-top-right-radius: 30px 30px;
+  border-bottom-right-radius: 30px 30px;
+  border-bottom-left-radius: 30px 30px;
+  margin: 5px 0 5px 20px;
 }
+.newsong li audio {
+  width: 100%;
+}
+.newsong a.listlink {
+  color: #fff;
+  text-align: right;
+  display: inline-block;
+  width: 100%;
+  margin-top: 5px;
+}
+/* 最新公開曲　ここまで */
 
 
-/*ページ別トップ*/
-.top main .align-right li {
-	list-style: initial;
-}
+/* ヘッダー　ここまで */
 
-/*ページ別プロフィール*/
-.profile table {
-	border: 1px solid #ccc;
-	background-color: #fff;
-	border-collapse: collapse;
-}
-.profile th,.profile td {
-	border: 1px solid #ccc;
-	padding: 3px;
-}
-.profile th {
-	white-space: nowrap;
-}
 
-/*ページ別公開曲*/
-.free-music main .align-left article {
-	clear: both;
-	position: static;
-	overflow: auto;
-	margin: 10px 0;
+/* メイン　ここから */
+main {
+  float: left;
+  width: calc(100% - 396px);
 }
-.free-music main .align-left article > div {
-	width: 38%;
-	float: left;
-	margin-right: 10px;
+main .musics {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
 }
-.free-music main .align-left article img {
-	width: 100%;
+main .musics h2 {
+  display: none;
 }
-.free-music main .align-left article audio {
-	width: 260%;
-	position: relative;
-	top: -7px;
-	left: 0;
-	opacity:0.8;
+main .musics article {
+  float: left;
+  overflow: auto;
+  height: auto;
+  box-sizing: border-box;
+  padding: 8px;
+
 }
-.free-music main .align-left article a {
-	font-size: 0.8em;
+/* グリット */
+main .musics {
+  display: grid;
+  grid-template-columns:  repeat( auto-fit, minmax(210px, 1fr) );
+  grid-gap: 10px;
+}
+main .musics article div {
+  position: relative;
+}
+main .musics article img {
+  width: 100%;
+  border-top-left-radius: 8px 8px;
+  border-top-right-radius: 8px 8px;
+  border-bottom-right-radius: 8px 8px;
+  border-bottom-left-radius: 8px 8px;
+}
+main .musics article audio {
+  width: 100%;
+}
+main .musics article .audio {
+  width: 100%;
+  bottom: 7px;
+}
+main .musics article h4 {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 43px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  color:#fff;
+  margin: 0;
+  padding: 5px;
+  font-size: 0.9em;
+}
+main .musics article .mask {
+  opacity: 0;
+  display: block;
+  position: absolute;
+  bottom: 75px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(255,255,255,0.8);
+  padding-bottom: 15px;
+  /* color: #fff; */
+  -webkit-transition:	all 0.5s ease;
+	transition:		all 0.5s ease;
+  border-top-left-radius: 8px 8px;
+  border-top-right-radius: 8px 8px;
+}
+main .musics article .mask p {
+  font-size: 0.8em;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.music:hover .mask {
+  opacity: 1;
+  padding-bottom: 30px;
+}
+main .musics article span a {
+  font-size: 0.8em;
 	text-align: center;
 	display: inline-block;
-	width: 38%;
-	margin-top: 20px;
+	width: 80%;
 	padding: 5px 0;
 	background-color: #0166ff;
 	color: #fff;
@@ -148,83 +302,134 @@ footer {
   border-bottom-right-radius: 30px 30px;
   border-bottom-left-radius: 30px 30px;
 }
-.free-music main .align-right {
-	font-size: 0.8em;
+main .license {
+  display: block;
+  float: left;
+  background-color: #0066ff;
+  color: #fff;
+  overflow: auto;
+  border-top-left-radius: 8px 8px;
+  border-top-right-radius: 8px 8px;
+  border-bottom-right-radius: 8px 8px;
+  border-bottom-left-radius: 8px 8px;
+  max-width: 400px;
+  margin: 5px;
+  width: 90%;
+  box-sizing: border-box;
+  padding: 10px;
 }
+main .license div {
+  padding: 5px;
+}
+/* メイン　ここまで */
+
+
+/* フッター　ここから */
+footer {
+  clear: both;
+  background-color: #0066ff;
+  color: #fff;
+  width: 100%;
+  margin-top: 30px;
+}
+footer p {
+  text-align: center;
+}
+/* フッター　ここまで */
+
+
+
 
 
 /* レスポンシブ　スマホ用　ここから*/
-@media screen and (max-width: 479px) {
-	/*ヘッダー*/
-	header {
-		width: 100%;
-		background-color: #0166FF;
-		position: fixed;
-		z-index: 100000;
-		height: 85px;
-	}
-	h1 {
-		display: inline-block;
-		width: 30%;
-		float: left;
-		margin: 5px 0 0 5px;
-	}
-	h1 img {
-		width: 100%;
-	}
-	nav {
-		float: right;
-		width: 65%;
-		margin: 5px 5px 0 0;
-	}
-	nav ul {
-		display: inline-block;
-	}
-	nav li {
-		display: inline;
-		margin: 0;
-		float: none;
-	}
-	nav li img {
-		width: 23%;
-	}
+@media screen and (max-width: 667px) {
+  .all {
+    padding: 1% 20px;
+  }
+  header,main {
+    float: none;
+  }
+  header {
+    margin-right: 0;
+    margin-bottom: 16px;
+    max-width: 100%;
+  }
+  header .newsong,.newsong .listlink {
+    display: block;
+  }
+  header #new_songs {
+    font-size: 0.9em;
+  }
+  header .newsong a {
+    display: none;
+  }
+  header .twitter {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+  main .musics {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  main .musics article {
+    width: 100%;
+    margin: 0 auto;
+    max-width: none;
+    background-color: #fff;
+    border: 1px solid #0066ff;
+    margin-bottom:5px;
+    color: #333;
+    font-size: 1.2em;
+    border-top-left-radius: 8px 8px;
+    border-top-right-radius: 8px 8px;
+    border-bottom-right-radius: 8px 8px;
+    border-bottom-left-radius: 8px 8px;
+  }
 
-	/*メイン*/
-	main {
-		width: 100%;
-		height: auto;
-		position: relative;
-		top: 85px;
-	}
-	main > div {
-		width: 95%;
-	}
-	main .align-right {
-		margin-top: 30px;
-	}
+  main .musics article h4 {
+    width: auto;
+    position: static;
+    display: inline-block;
+    background-color: unset;
+    text-align: none;
+    color: #333;
+  }
+  main .musics article .mask {
+    opacity: 1;
+    background-color: unset;
+    width: 100%;
+    position: static;
+    text-align: left;
+    display: inline;
 
-
-	/*フッター*/
-	footer {
-		margin: 0;
-		font-size: 1em;
-		padding: 5px 0;
-	}
-
-	/*ページ別*/
-	/*メイン　トップページ*/
-	.top 	main > div {
-		max-width: 85%;
-	}
-	.top main ul {
-		margin-left: 20px;
-	}
-
-	/*メイン　公開曲*/
-	.free-music main .align-left article audio {
-		top: 0;
-		margin-bottom: 20px;
-	}
-
+  }
+  main .music:hover .mask {
+    padding-bottom: 0;
+  }
+  main .musics article img {
+    width: 30%;
+    float: right;
+    margin-left: 10px;
+  }
+  main .musics article span a {
+    display: none;
+  }
+  main .musics article .audio {
+    bottom: 0;
+  }
+  main .musics article audio {
+    width: 100%;
+    position: static;
+  }
+  main .license {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    box-sizing: border-box;
+    font-size: 0.9em;
+  }
 }
-/* レスポンシブ　スマホ用　ここまで*/

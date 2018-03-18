@@ -1,94 +1,344 @@
 <!DOCTYPE html>
 <html lang="ja">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=no">
-		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
-		<meta name="msapplication-task" content="name=八崎詠斗公式サイト ; action-uri=https://www.8yazaki.jp/; icon-uri=https://www.8yazaki.jp/favicon.ico">
-		<link rel="shortcut icon" href="https://www.8yazaki.jp/favicon.ico">
-		<meta name="author" content="八崎詠斗">
-		<meta name="keywords" content="八崎詠斗,音楽,オリジナル,作曲,無料,music,やざき,えいと,やざきえいと,矢崎,矢崎えいと,free,クリエイティブ・コモンズ,公式サイト">
-		<meta name="description" content="趣味で作曲しています。無料から作曲依頼も募集しています。">
-		<link href="style.css" rel="stylesheet" media="all" />
-		<!-- Google関係　ここから -->
-		<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-22023374-1']);
-		  _gaq.push(['_trackPageview']);
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		</script>
-		<!-- Google関係　ここまで -->
-		<title>八崎詠斗公式サイト</title>
 
-	</head>
-	<body class="top">
-		<!-- ヘッターここから -->
-		<header>
-			<h1><a href="index.html"><img src="img/top-logo.jpg" alt="八崎詠斗公式サイト"></a></h1>
-			<nav>
-				<ul>
-					<li><a href="activity-idea.html"><img src="img/menu-activityidea.gif" alt="活動理念"></a></li>
-					<li><a href="free-music.html"><img src="img/menu-freemusic.gif" alt="公開曲"></a></li>
-					<li><a href="profile.html"><img src="img/menu-profile.gif" alt="プロフィール"></a></li>
-					<li><a href="contact.html"><img src="img/menu-contact.gif" alt="ご依頼・お問合せ"></a></li>
-				</ul>
-			</nav>
-		</header>
-		<!-- ヘッターここまで -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=no">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	<meta http-equiv="Expires" content="86400">
+	<!-- キャッシュの有効期限指定 -->
+	<meta name="author" content="八崎詠斗">
+	<meta name="keywords" content="八崎詠斗,音楽,オリジナル,作曲,無料,music,やざき,えいと,やざきえいと,八崎,八崎えいと,free,クリエイティブ・コモンズ,公式サイト">
+	<meta name="description" content="八崎詠斗の公式サイト。作った曲を著作権フリーで公開しています。作曲依頼も募集中！">
+	<link href="style.css" rel="stylesheet" media="all" />
+	<link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
+	<title>八崎詠斗公式サイト</title>
+	<!-- Googleアナリティクス関係　ここから -->
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22023374-1']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+	<!-- Googleアナリティクス関係　ここまで -->
 
+	<!-- XML処理関係　ここから -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!-- 曲リスト全体 -->
+	<script>
+		$(function() {
+			$.ajax({
+				url: 'musics.xml',
+				type: 'GET',
+				dataType: 'xml',
+				timeout: 1000,
+				error: function() {
+					console.log("曲リストの読み込みに失敗しました");
+				},
+				success: function(xml) {
+					$(xml).find('music').each(function() {
+						$("#musics_list").append(
+							'<article class="music"><div><h4>「' +
+							$(this).find('title').text() + '」</h4><img src="' +
+							$(this).find('jacket').text() + '"   alt="' +
+							$(this).find('title').text() + '"><span class="mask"><p>' +
+							$(this).find('comment').text() + '</p><a href="' +
+							$(this).find('mp3').text() + '" download="' +
+							$(this).find('mp3').text() + '">MP3ダウンロード</a></span><div class="audio"><audio src="' +
+							$(this).find('mp3').text() + '" controls="controls"></audio></div></div></article>'
 
-		<!-- メインコンテンツここから -->
-		<main>
-			<!-- 左側 ここから -->
-			<div class="align-left">
-			<a class="twitter-timeline" href="https://twitter.com/8yazaki" data-widget-id="363956257297666049">@8yazakiさんのツイート</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						);
+					});
+				}
+			});
+		});
+	</script>
+
+	<!-- 曲リスト最新曲のみ -->
+	<script>
+		$(function() {
+			$.ajax({
+				url: 'musics.xml',
+				type: 'GET',
+				dataType: 'xml',
+				timeout: 1000,
+				error: function() {
+					console.log("曲リストの読み込みに失敗しました");
+				},
+				success: function(xml) {
+					$(xml).find('music:lt(1)').each(function() {
+						$("#new_songs").append(
+							'<li><img src="' +
+							$(this).find('jacket').text() + '"   alt="' +
+							$(this).find('title').text() + '"><h4>「' +
+							$(this).find('title').text() + '」</h4><p>' +
+							$(this).find('comment').text() + '</p><a href="' +
+							$(this).find('mp3').text() + '" download="' +
+							$(this).find('mp3').text() + '">MP3ダウンロード</a><audio src="' +
+							$(this).find('mp3').text() + '" controls="controls"></audio></li>'
+						);
+					});
+				}
+			});
+		});
+	</script>
+	<!-- XML処理関係　ここまで -->
+	<!-- コンテンツの開閉　ここから -->
+	<script>
+		$(document).ready(function() {
+			$('.head').click(function() {
+				$(this).next('.row').stop(true, true).slideToggle();
+				$(this).children("span").toggleClass("open");
+			});
+		});
+	</script>
+	<!-- コンテンツの開閉　ここまで -->
+</head>
+
+<body>
+	<div class="all">
+	<!-- ヘッダー　ここから -->
+	<header>
+		<h1>
+			<!-- <a href="https://www.8yazaki.jp/"><img src="img/top-logo.png" alt="八崎詠斗 公式サイト"></a> -->
+			<p>八崎詠斗 公式サイト</p>
+		</h1>
+		<div class="sns-button">
+			<a href="https://twitter.com/8yazaki" target="top"><img src="img/sns/icon_twitter.png" alt="Twitter"></a>
+			<a href="https://www.youtube.com/user/8yazaki" target="top"><img src="img/sns/icon_youtube.png" alt="YouTubeチャンネル"></a>
+			<a href="http://com.nicovideo.jp/community/co1449067" target="top"><img src="img/sns/icon_niconico.png" alt="ニコニコ コミュニティ"></a>
+			<a href="https://soundcloud.com/8yazaki/tracks" target="top"><img src="img/sns/icon_soundcloud.png" alt="SoundCloud"></a>
 		</div>
-			<!-- 左側ここまで -->
 
-			<!-- 右側　ここから -->
-			<div class="align-right">
-				<h3>リンク</h3>
-				<ul class="indent">
-					<li><a href="http://www.youtube.com/user/8yazaki" target="_new">YouTubeチャンネル</a></li>
-					<li><a href="http://com.nicovideo.jp/community/co1449067" target="_new">ニコニコ生放送コミュニティ「癒しの即興演奏」</a></li>
-					<li><a href="http://www.niconicommons.jp/user/794305" target="_new">ニコニ・コモンズ</a></li>
-					<li><a href="https://soundcloud.com/8yazaki/tracks" target="_new">SoundCloud</a></li>
+
+
+
+		<!-- ヘッダーコンテンツ　ここから -->
+		<div class="h-contents">
+			<!-- 最新公開曲　ここから -->
+			<div class="newsong">
+				<h2>■最新公開曲</h2>
+				<ul id="new_songs">
+
+					<!-- <li>
+					<img src="img/music/yazaki.jpg" alt="2009 Start">
+					<h4>「2009 Start」</h4>
+					<p>始まりを決意した曲です</p>
+					<a href="music/2009start.mp3" download="music/2009start.mp3">MP3ダウンロード</a>
+					<audio src="music/2009start.mp3" controls="controls"></audio> -->
+				</li>
+
 				</ul>
-				<br>
-				<br>
-				<br>
-				<br>
-				<!-- Google広告ここから -->
-				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<ins class="adsbygoogle"
-				     style="display:block; text-align:center;"
-				     data-ad-layout="in-article"
-				     data-ad-format="fluid"
-				     data-ad-client="ca-pub-5367719398896285"
-				     data-ad-slot="5129313031"></ins>
+				<a href="#music" class="listlink">楽曲一覧はこちら</a>
+			</div>
+			<!-- 最新公開曲　ここまで -->
+
+
+			<!-- プロフィール　ここから -->
+			<h2>■プロフィール</h2>
+			<div class="profile">
+				<h3>八崎詠斗(やざきえいと)</h3>
+				<p>
+					色んなものを創る事が好きです。
+				</p>
+
+				<h3>活動理念</h3>
+					<b class="head"><span>音楽をもっと自由に！</span></b>
+					<p class="concept row">
+						音楽は著作権で守られていると同時に、簡単で自由に扱うことがしにくいものになっています。<br>
+						保護されている著作物は勝手に改変・再配布等できません。つまり、インターネット放送でBGMで使ったりラジオの様に曲を流す事ができません。<br>
+						それは、音楽の可能性をを狭めるものだと思っています。私はもっと音楽の可能性があるのかを見てみたいです。<br>
+						そんな思いで、当サイトで掲載している曲は全て自由に改変・再配布等できる様に公開（クリエイティブ・コモンズ・ライセンス）しています。<br>
+						もちろんインターネット放送で流すことも可能です。<br>
+					</p>
+					<b class="head"><span>感動を革命へ</span></b>
+					<p class="concept row">
+					私の創った曲で人を感動させたい。そしてその感動から聞いてくれた方の何かを変えたい。<br>
+					それは聞いてくれた方の中で革命が起こるような衝撃のある曲を創っていきたい。<br>
+					そう想いながら曲作りに励んでいます。<br>
+					</p>
+			</div>
+			<div class="machine">
+				<h3>制作環境</h3>
+				<p>
+					マシン：iMac<br>
+					ソフト：Logic Pro X<br>
+					キーボード：M-Audio KEYSTATION88<br>
+				</p>
+			</div>
+			<h3 class="head"><span>活動履歴</span></h3>
+			<table class="indent row">
+				<tr>
+					<th>1996年</th>
+					<td>独学で電子ピアノを始める</td>
+				</tr>
+				<tr>
+					<th>1997年</th>
+					<td>初めて作曲する</td>
+				</tr>
+				<tr>
+					<th>1999年</th>
+					<td>DTMで作曲する</td>
+				</tr>
+				<tr>
+					<th rowspan="3">2005年</th>
+					<td>勉強用にMacを購入</td>
+				</tr>
+				<tr>
+					<td>Garage Bandを使って作曲を始める</td>
+				</tr>
+				<tr>
+					<td>Apple Storeイベントの<br> Garage Bandコンテストに出場し、優勝</td>
+				</tr>
+				<tr>
+					<th>2008年</th>
+					<td>Logice Express8を使い始める</td>
+				</tr>
+				<tr>
+					<th rowspan="2">2009年</th>
+					<td>MySpaceに登録</td>
+				</tr>
+				<tr>
+					<td>Logic Studio8を使い始める</td>
+				</tr>
+				<tr>
+					<th rowspan="3">2011年</th>
+					<td>公式サイト立ち上げ<br> 作曲依頼募集開始
+						<br></td>
+				</tr>
+				<tr>
+					<td>Logic Studio9に変更</td>
+				</tr>
+				<tr>
+					<td>作曲用にMacBookProを新調</td>
+				</tr>
+				<tr>
+					<th rowspan="2">2012年</th>
+					<td>VOCALOID鏡音リン・レンを購入</td>
+				</tr>
+				<tr>
+					<td>公式サイトリニューアル</td>
+				</tr>
+				<tr>
+					<th>2013年</th>
+					<td>Logic Pro Xに変更</td>
+				</tr>
+				<tr>
+					<th>2013年</th>
+					<td>Logic Pro Xに変更</td>
+				</tr>
+				<tr>
+					<th>2017年</th>
+					<td>ロゴを変更<br> MacBookProからiMacへ変更
+					</td>
+				</tr>
+				<tr>
+					<th>2018年</th>
+					<td>ココナラで<a href="https://coconala.com/services/414042" target="top">作曲を出品開始</a></td>
+				</tr>
+			</table>
+			<!-- プロフィール　ここまで -->
+
+			<!-- コンタクト　ここから -->
+			<h2>■コンタクト</h2>
+			<p>
+				<a href="https://goo.gl/forms/46E2BQXr5KGNrPmx1" target="top">
+					こちらのフォーム
+				</a>
+				からご連絡下さい。<br>
+				作曲のご依頼は<a href="https://coconala.com/services/414042" target="top">ココナラ</a>からご連絡ください。
+			</p>
+			<!-- コンタクト　ここまで -->
+
+			<!-- Twitter　ここから -->
+			<div class="twitter">
+				<h2>■Twitter</h2>
+				<a class="twitter-timeline" href="https://twitter.com/8yazaki" data-widget-id="363956257297666049">@8yazakiさんのツイート</a>
 				<script>
-				     (adsbygoogle = window.adsbygoogle || []).push({});
+					! function(d, s, id) {
+						var js, fjs = d.getElementsByTagName(s)[0],
+							p = /^http:/.test(d.location) ? 'http' : 'https';
+						if (!d.getElementById(id)) {
+							js = d.createElement(s);
+							js.id = id;
+							js.src = p + "://platform.twitter.com/widgets.js";
+							fjs.parentNode.insertBefore(js, fjs);
+						}
+					}(document, "script", "twitter-wjs");
 				</script>
-				<!-- Google広告ここまで -->
+			</div>
+			<!-- Twitter　ここまで -->
+
+			<!-- Google広告ここから -->
+			<br><br>
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-5367719398896285" data-ad-slot="5129313031"></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+			<!-- Google広告ここまで -->
 
 			</div>
-			<!-- 右側　ここまで -->
+			<!-- ヘッダーコンテンツ　ここまで -->
+	</header>
+	<!-- ヘッダー　ここまで -->
+
+	<!-- メインコンテンツ　ここから -->
+	<main>
+		<a name="music"></a>
+		<div class="musics" id="musics_list">
 
 
-			</main>
-		<!-- メインコンテンツここまで -->
+			<!-- <article class="music">
+				<div>
+					<h4>「2009 Start」</h4>
+					<img src="img/music/yazaki.jpg" alt="2009 Start">
+					<span class="mask">
+						<p>始まりを決意した曲です</p>
+						<a href="music/2009start.mp3" download="music/2009start.mp3">MP3ダウンロード</a>
+					</span>
+					<div class="audio">
+					<audio src="music/2009start.mp3" controls="controls"></audio>
+					</div>
+			</div>
+			</article> -->
 
+		</div>
+		<!-- ライセンス　ここから -->
+		<div class="license">
+			<h2>ライセンス</h2>
+			<div class="indent">
+				自由に利用することができます。（以下例）
+				<br> ・インターネット配信のBGM
+				<br> ・投稿動画（YouTubeなど）のBGM
+				<br> ・創作作品の素材として加工
+				<br> ※ご使用の際は作曲者名（八崎詠斗）を明記下さい。<br> <br>
+				<a href="http://creativecommons.org/licenses/by/2.1/jp/" target="_new" rel="license">
+				<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/2.1/jp/88x31.png" />
+				</a>
+				<br /> これらの作品は、
+				<br />
+				<a href="http://creativecommons.org/licenses/by/2.1/jp/" target="_new" rel="license">
+				クリエイティブ・コモンズ・ライセンス
+				</a><br /> の下でライセンスされています。
+				<br>
+			</div>
+		</div>
+		<!-- ライセンス　ここまで -->
+	</main>
+	<!-- メインコンテンツ　ここまで -->
+</div>
+	<footer>
+		<p><small>Copyright(c) 8yazaki All Right Reserved.</small></p>
+	</footer>
 
-		<!-- フッターここから -->
-		<footer>
-      <p><small>Copyright(c) 8yazaki All Right Reserved.</small></p>
-		</footer>
-		<!-- フッターここまで -->
+</body>
 
-
-	</body>
 </html>
