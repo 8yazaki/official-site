@@ -1,4 +1,8 @@
 .ftpconfig
 .gitgnore
+<<<<<<< HEAD
 .DS_store
+=======
+.DS_Store
+>>>>>>> 12ec0974a56e0441d1bd7f536f48f531c0fb2132
 music/
