@@ -357,6 +357,9 @@ footer p {
   header .newsong,.newsong .listlink {
     display: block;
   }
+  header .newsong {
+    font-size: 0.9em;
+  }
   header .newsong a {
     display: none;
   }
@@ -413,6 +416,9 @@ footer p {
   }
   main .musics article span a {
     display: none;
+  }
+  main .musics article .audio {
+    bottom: 0;
   }
   main .musics article audio {
     width: 100%;
