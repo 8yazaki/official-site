@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <music_list>
 	<music>
+		<title>和やかなひととき</title>
+		<comment>心が穏やかになるような曲です</comment>
+		<mp3>music/20180312_nagoyaka-time.mp3</mp3>
+		<jacket>img/jacket/nagoyaka-time.jpg</jacket>
+		<createdate>
+			<year>2018</year>
+			<month>03</month>
+			<day>12</day>
+		</createdate>
+	</music>
+	<music>
 		<title>ココナラ用サンプル曲</title>
 		<comment>ココナラ出品用のサンプル曲です</comment>
 		<mp3>music/20171124_coconala_bgm_sample.mp3</mp3>
