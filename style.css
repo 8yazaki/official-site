@@ -357,7 +357,7 @@ footer p {
   header .newsong,.newsong .listlink {
     display: block;
   }
-  header .newsong {
+  header #new_songs {
     font-size: 0.9em;
   }
   header .newsong a {
