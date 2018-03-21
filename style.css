@@ -88,7 +88,7 @@ header h1 p {
 
 header .line {
   content: "---.. -.-- .- --.. .- -.- .. .-.-.- .--- .--.";
-  width: 98%;
+  width: 100%;
   background-color: #fff;
   color: #eee;
   font-size: 0.01em;
@@ -101,7 +101,7 @@ header .line {
 }
 header .line2 {
   content: "---.. -.-- .- --.. .- -.- .. .-.-.- .--- .--.";
-  width: 98%;
+  width: 100%;
   background-color: #fff;
   color: #eee;
   font-size: 0.01em;
