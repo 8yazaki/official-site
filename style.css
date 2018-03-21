@@ -87,7 +87,6 @@ header h1 p {
 } */
 
 header .line {
-  content: "---.. -.-- .- --.. .- -.- .. .-.-.- .--- .--.";
   width: 100%;
   background-color: #fff;
   color: #eee;
@@ -100,7 +99,6 @@ header .line {
   border-bottom-left-radius: 8px 8px;
 }
 header .line2 {
-  content: "---.. -.-- .- --.. .- -.- .. .-.-.- .--- .--.";
   width: 100%;
   background-color: #fff;
   color: #eee;
