@@ -85,6 +85,34 @@ header h1 p {
   width: 68%;
   margin: 5% auto;
 } */
+
+header .line {
+  content: "---.. -.-- .- --.. .- -.- .. .-.-.- .--- .--.";
+  width: 98%;
+  background-color: #fff;
+  color: #eee;
+  font-size: 0.01em;
+  text-align: center;
+  margin-bottom: 20px;
+  border-top-left-radius: 8px 8px;
+  border-top-right-radius: 8px 8px;
+  border-bottom-right-radius: 8px 8px;
+  border-bottom-left-radius: 8px 8px;
+}
+header .line2 {
+  content: "---.. -.-- .- --.. .- -.- .. .-.-.- .--- .--.";
+  width: 98%;
+  background-color: #fff;
+  color: #eee;
+  font-size: 0.01em;
+  text-align: center;
+  margin-top: 20px;
+  border-top-left-radius: 8px 8px;
+  border-top-right-radius: 8px 8px;
+  border-bottom-right-radius: 8px 8px;
+  border-bottom-left-radius: 8px 8px;
+}
+
 header .sns-button {
   text-align: center;
 }
