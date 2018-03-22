@@ -106,6 +106,10 @@ header .line2 {
   border-bottom-right-radius: 8px 8px;
   border-bottom-left-radius: 8px 8px;
 }
+header .line div,header .line2 div {
+  transform: scale(0.5);
+  width: 130%;
+}
 
 header .sns-button {
   text-align: center;
