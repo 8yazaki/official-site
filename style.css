@@ -229,7 +229,11 @@ header .coconala {
 }
 /* 最新公開曲　ここまで */
 
-
+header .privacypolicy {
+  font-size: 0.8em;
+  background-color: #ffffff21;
+  padding: 8px;
+}
 /* ヘッダー　ここまで */
 
 
