@@ -386,6 +386,9 @@ footer p {
   header .twitter {
     display: none;
   }
+  header .googleads {
+    display: none;
+  }
   main {
     width: 100%;
   }
