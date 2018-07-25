@@ -10,7 +10,7 @@
 	<meta name="author" content="八崎詠斗">
 	<meta name="keywords" content="八崎詠斗,音楽,オリジナル,作曲,無料,music,やざき,えいと,やざきえいと,八崎,八崎えいと,free,クリエイティブ・コモンズ,公式サイト">
 	<meta name="description" content="八崎詠斗の公式サイト。作った曲を著作権フリーで公開しています。作曲依頼も募集中！">
-	<link href="style.css?201806081925" rel="stylesheet" media="all" />
+	<link href="style.css?201807260547" rel="stylesheet" media="all" />
 	<link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
 	<title>八崎詠斗公式サイト</title>
 	<!-- Googleアナリティクス関係　ここから -->
@@ -45,13 +45,14 @@
 				success: function(xml) {
 					$(xml).find('music').each(function() {
 						$("#musics_list").append(
-							'<article class="music"><div><h4>「' +
-							$(this).find('title').text() + '」</h4><img src="' +
+							'<article class="music"><div><div class="type"><div>' +
+							$(this).find('type').text() + '</div></div><h4>「' +
+							$(this).find('title').text() + '」</h4><img src="img/jacket/' +
 							$(this).find('jacket').text() + '"   alt="' +
 							$(this).find('title').text() + '"><span class="mask"><p>' +
 							$(this).find('comment').text() + '</p><a href="' +
-							$(this).find('mp3').text() + '" download="' +
-							$(this).find('mp3').text() + '">MP3ダウンロード</a></span><div class="audio"><audio src="' +
+							$(this).find('mp3').text() + '" download="music/' +
+							$(this).find('mp3').text() + '">MP3ダウンロード</a></span><div class="audio"><audio src="music/' +
 							$(this).find('mp3').text() + '" controls="controls"></audio></div></div></article>'
 
 						);
@@ -75,13 +76,13 @@
 				success: function(xml) {
 					$(xml).find('music:lt(1)').each(function() {
 						$("#new_songs").append(
-							'<li><img src="' +
+							'<li><img src="img/jacket/' +
 							$(this).find('jacket').text() + '"   alt="' +
 							$(this).find('title').text() + '"><h4>「' +
 							$(this).find('title').text() + '」</h4><p>' +
-							$(this).find('comment').text() + '</p><a href="' +
+							$(this).find('comment').text() + '</p><a href="music/' +
 							$(this).find('mp3').text() + '" download="' +
-							$(this).find('mp3').text() + '">MP3ダウンロード</a><audio src="' +
+							$(this).find('mp3').text() + '">MP3ダウンロード</a><audio src="music/' +
 							$(this).find('mp3').text() + '" controls="controls"></audio></li>'
 						);
 					});
@@ -272,18 +273,6 @@
 			<!-- プロフィール　ここまで -->
 
 
-			<!-- Google広告ここから -->
-			<div class="googleads">
-				<br><br>
-				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-5367719398896285" data-ad-slot="5129313031"></ins>
-				<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-			</div>
-			<!-- Google広告ここまで -->
-
-
 
 			<!-- ライセンス　ここから -->
 			<h2 class="head"><span>■ライセンス</span></h2>
@@ -436,11 +425,15 @@
 		<a name="music"></a>
 		<div class="musics" id="musics_list">
 
-
-			<!-- <article class="music">
+<!--
+			<article class="music">
 				<div>
+					<div class="type">
+						<div>
+						Portfolio
+					</div></div>
 					<h4>「2009 Start」</h4>
-					<img src="img/music/yazaki.jpg" alt="2009 Start">
+					<img src="img/jacket/yazaki.jpg" alt="2009 Start">
 					<span class="mask">
 						<p>始まりを決意した曲です</p>
 						<a href="music/2009start.mp3" download="music/2009start.mp3">MP3ダウンロード</a>
@@ -448,8 +441,10 @@
 					<div class="audio">
 					<audio src="music/2009start.mp3" controls="controls"></audio>
 					</div>
-			</div>
-			</article> -->
+
+				</div>
+			</article>
+ -->
 
 		</div>
 

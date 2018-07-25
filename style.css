@@ -340,7 +340,29 @@ main .musics article span a {
   border-bottom-right-radius: 30px 30px;
   border-bottom-left-radius: 30px 30px;
 }
-
+main .musics article .type {
+  /* background-color: #0000007d; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 50px solid #0000007d;
+  border-right: 50px solid #0000007d;
+  border-bottom: 50px solid transparent;
+  border-left: 50px solid transparent;
+}
+main .musics article .type div {
+  position: absolute;
+  transform: rotate(45deg);
+  top:-2.5vw;
+  right: -5vw;
+  width: 7vw;
+  font-size: 1.5vw;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
 /* メイン　ここまで */
 
 
@@ -447,12 +469,7 @@ footer p {
     width: 100%;
     position: static;
   }
-  main .license {
-    float: none;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 10px;
-    box-sizing: border-box;
-    font-size: 0.9em;
+  main .musics article .type {
+    display: none;
   }
 }
