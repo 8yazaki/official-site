@@ -345,22 +345,21 @@ main .musics article .type {
   position: absolute;
   top: 0;
   right: 0;
-  border-top: 50px solid #0000007d;
-  border-right: 50px solid #0000007d;
-  border-bottom: 50px solid transparent;
-  border-left: 50px solid transparent;
+  border-top: 30px solid #0000007d;
+  border-right: 30px solid #0000007d;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid transparent;
 }
 main .musics article .type div {
   position: absolute;
   transform: rotate(45deg);
-  top:-2.5vw;
-  right: -5vw;
+  top:-0.8vw;
+  right: -4.1vw;
   width: 7vw;
-  font-size: 1.5vw;
+  font-size: 0.4vw;
   color: #fff;
   display: inline-block;
   text-align: center;
-  font-weight: bold;
   letter-spacing: 0.1em;
 }
 /* メイン　ここまで */
