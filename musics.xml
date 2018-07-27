@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <music_list>
 	<music>
+		<title>夏のはじまり</title>
+		<comment>夏の始まりを感じさせられるBGMです</comment>
+		<mp3>20180725_summerstart.mp3</mp3>
+		<jacket>summerstart.jpg</jacket>
+		<type>Works</type>
+		<createdate>
+			<year>2018</year>
+			<month>07</month>
+			<day>25</day>
+		</createdate>
+	</music>
+	<music>
 		<title>和やかなひととき</title>
 		<comment>心が穏やかになるような曲です</comment>
 		<mp3>20180312_nagoyaka-time.mp3</mp3>
