@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <music_list>
 	<music>
+		<title>ぐらいど</title>
+		<comment>2018/08/08に配信しながら作った曲</comment>
+		<mp3>glide.mp3</mp3>
+		<jacket>glide.jpg</jacket>
+		<type>自主制作</type>
+		<createdate>
+			<year>2018</year>
+			<month>08</month>
+			<day>08</day>
+		</createdate>
+	</music>
+	<music>
+		<title>海上都市</title>
+		<comment>ベネチアの様な海上都市をイメージした曲です</comment>
+		<mp3>kaijoutoshi.mp3</mp3>
+		<jacket>kaijoutoshi.jpg</jacket>
+		<type>Works</type>
+		<createdate>
+			<year>2018</year>
+			<month>08</month>
+			<day>03</day>
+		</createdate>
+	</music>
+	<music>
 		<title>夏のはじまり</title>
 		<comment>夏の始まりを感じさせられるBGMです</comment>
 		<mp3>20180725_summerstart.mp3</mp3>
