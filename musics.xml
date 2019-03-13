@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <music_list>
 	<music>
+		<title>にゃんこの嫁入り</title>
+		<comment>ほたる恵さんの絵をイメージして作った曲です</comment>
+		<mp3>20190313_nyanko.mp3</mp3>
+		<jacket>nyanko.jpg</jacket>
+		<type>自主制作</type>
+		<createdate>
+			<year>2019</year>
+			<month>03</month>
+			<day>13</day>
+		</createdate>
+	</music>
+	<music>
 		<title>癒やしのBGM 432Hz</title>
 		<comment>YouTubeで公開した動画の原曲です</comment>
 		<mp3>20190226_iyashi432hz.mp3</mp3>
