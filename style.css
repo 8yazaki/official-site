@@ -32,7 +32,7 @@ a {
 }
 b.head span {
   font-size: 1em;
-  margin-left: 20px;
+  margin-left: 15px;
   margin-bottom: 5px;
   display: block;
   font-weight: normal;
@@ -135,7 +135,7 @@ header .h-contents h3 {
   margin: 10px 0 5px 10px ;
 }
 header p {
-  padding: 0 0 0 13px;
+  margin-left: 18px;
 }
 header .profile {
   background-image: url("img/profile.png");
@@ -239,6 +239,7 @@ header .privacypolicy {
   font-size: 0.8em;
   background-color: #ffffff21;
   padding: 8px;
+  border-radius: 10px;
 }
 header .contact a {
   padding: 0 1%;
@@ -375,6 +376,9 @@ footer {
   color: #fff;
   width: 100%;
   margin-top: 30px;
+  padding: 10px;
+  font-size: 0.7em;
+
 }
 footer p {
   text-align: center;

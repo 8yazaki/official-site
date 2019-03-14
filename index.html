@@ -10,7 +10,7 @@
 	<meta name="author" content="八崎詠斗">
 	<meta name="keywords" content="八崎詠斗,音楽,オリジナル,作曲,無料,music,やざき,えいと,やざきえいと,八崎,八崎えいと,free,クリエイティブ・コモンズ,公式サイト">
 	<meta name="description" content="八崎詠斗の公式サイト。作った曲を著作権フリーで公開しています。作曲依頼も募集中！">
-	<link href="style.css?201903051820" rel="stylesheet" media="all" />
+	<link href="style.css?201903142217" rel="stylesheet" media="all" />
 	<link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
 	<title>八崎詠斗公式サイト</title>
 	<!-- Googleアナリティクス関係　ここから -->
@@ -48,14 +48,14 @@
 					$(xml).find('music').each(function() {
 						$("#musics_list").append(
 							'<article class="music"><div><div class="type"><div>' +
-							$(this).find('type').text() + '</div></div><h4>「' +
+							$(this).find('type').text() + '</div></div><h4 itemprop="name">「' +
 							$(this).find('title').text() + '」</h4><img src="img/jacket/' +
 							$(this).find('jacket').text() + '"   alt="' +
-							$(this).find('title').text() + '"><span class="mask"><p>' +
+							$(this).find('title').text() + '" itemprop="image"><span class="mask"><p itemprop="description">' +
 							$(this).find('comment').text() + '</p><a href="music/' +
 							$(this).find('mp3').text() + '" download="music/' +
 							$(this).find('mp3').text() + '">MP3ダウンロード</a></span><div class="audio"><audio src="music/' +
-							$(this).find('mp3').text() + '" controls="controls"></audio></div></div></article>'
+							$(this).find('mp3').text() + '" controls="controls" itemprop="auido"></audio></div></div></article>'
 
 						);
 					});
@@ -113,7 +113,7 @@
 	<!-- コンテンツの開閉　ここまで -->
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/WebPage">
 	<div class="all">
 		<!-- ヘッダー　ここから -->
 		<header>
@@ -174,6 +174,17 @@
 				</div>
 				<!-- Twitter　ここまで -->
 
+				<!-- コンタクト　ここから -->
+				<h2>■コンタクト</h2>
+				<p class="contact">
+					<a href="https://goo.gl/forms/46E2BQXr5KGNrPmx1" target="top">
+					お問い合わせ
+				</a>
+					<a href="https://profile.coconala.com/users/246682" target="top">作曲依頼</a>
+					<a href="https://www.pixiv.net/fanbox/creator/7070181" target="top">pixivFANBOX</a>
+				</p>
+				<!-- コンタクト　ここまで -->
+
 				<!-- プロフィール　ここから -->
 				<h2>■プロフィール</h2>
 				<div class="profile">
@@ -203,7 +214,7 @@
 				<div class="machine">
 					<h3>制作環境</h3>
 					<p>
-						マシン：iMac<br>
+					マシン：iMac<br>
 					ソフト：Logic Pro X<br>
 					キーボード：M-Audio KEYSTATION88<br>
 
@@ -306,22 +317,15 @@
 
 
 				<!-- ライセンス　ここから -->
-				<h2 class="head"><span>■ライセンス</span></h2>
-				<p class="row license">
+				<h2>■公開曲のご利用について</h2>
+				<p>
 					このサイトからダウンロードできる曲は自由に利用することができます。（以下例）
 					<br> ・インターネット配信のBGM
 					<br> ・投稿動画（YouTubeなど）のBGM
 					<br> ・創作作品の素材として加工
 					<br> ※ご使用の際は作曲者名（八崎詠斗）を明記下さい。<br> <br>
 
-				詳しくは
-					<a href="http://creativecommons.org/licenses/by/2.1/jp/" target="_new" rel="license">
-				クリエイティブ・コモンズ・ライセンス
-				</a>
-					をご参照ください<br>
-					<a href="http://creativecommons.org/licenses/by/2.1/jp/" target="_new" rel="license">
-				<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/2.1/jp/88x31.png" />
-				</a>
+					<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />このサイトで公開されいるオリジナル曲（MP3ファイル）は<br> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">クリエイティブ・コモンズ 表示 4.0 国際 ライセンス</a>の下に提供されています。
 				</p>
 				<!-- ライセンス　ここまで -->
 
@@ -428,16 +432,7 @@
 				<!-- プライバシーポリシー　ここまで -->
 
 
-				<!-- コンタクト　ここから -->
-				<h2>■コンタクト</h2>
-				<p class="contact">
-					<a href="https://goo.gl/forms/46E2BQXr5KGNrPmx1" target="top">
-					お問い合わせ
-				</a>
-					<a href="https://profile.coconala.com/users/246682" target="top">作曲依頼</a>
-					<a href="https://www.pixiv.net/fanbox/creator/7070181" target="top">PIXIV FANBOX</a>
-				</p>
-				<!-- コンタクト　ここまで -->
+
 
 
 			</div>
@@ -457,7 +452,7 @@
 		<!-- メインコンテンツ　ここから -->
 		<main>
 			<a name="music"></a>
-			<div class="musics" id="musics_list">
+			<div class="musics" id="musics_list" itemscope itemtype="http://schema.org/MusicPlaylist">
 
 				<!--
 			<article class="music">
@@ -466,27 +461,28 @@
 						<div>
 						Portfolio
 					</div></div>
-					<h4>「2009 Start」</h4>
-					<img src="img/jacket/yazaki.jpg" alt="2009 Start">
+					<h4 itemprop="name">「2009 Start」</h4>
+					<img src="img/jacket/yazaki.jpg" alt="2009 Start" itemprop="image">
 					<span class="mask">
-						<p>始まりを決意した曲です</p>
+						<p itemprop="description">始まりを決意した曲です</p>
 						<a href="music/2009start.mp3" download="music/2009start.mp3">MP3ダウンロード</a>
 					</span>
 					<div class="audio">
-					<audio src="music/2009start.mp3" controls="controls"></audio>
+					<audio src="music/2009start.mp3" controls="controls" itemprop="auido"></audio>
 					</div>
 
 				</div>
 			</article>
- -->
+			 -->
+
 
 			</div>
 
 		</main>
 		<!-- メインコンテンツ　ここまで -->
 	</div>
-	<footer>
-		<p><small>Copyright(c) 8yazaki All Right Reserved.</small></p>
+	<footer itemscope itemtype="http://schema.org/WPFooter">
+		<p><small><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />このサイトで公開されいるオリジナル曲（MP3ファイル）は <br><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">クリエイティブ・コモンズ 表示 4.0 国際 ライセンス</a>の下に提供されています。</small></p>
 	</footer>
 
 </body>
