@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <music_list>
 	<music>
+		<title>海中の睡眠</title>
+		<comment>YouTubeで公開した動画の原曲です</comment>
+		<mp3>20190304_sleepingsea.mp3</mp3>
+		<jacket>sleepingsea.png</jacket>
+		<type>自主制作</type>
+		<createdate>
+			<year>2019</year>
+			<month>03</month>
+			<day>04</day>
+		</createdate>
+	</music>
+	<music>
 		<title>にゃんこの嫁入り</title>
 		<comment>ほたる恵さんの絵をイメージして作った曲です</comment>
 		<mp3>20190313_nyanko.mp3</mp3>
