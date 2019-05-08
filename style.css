@@ -386,7 +386,72 @@ footer p {
 
 
 
+/* レスポンシブ　タブレット用　ここから*/
+@media screen and (min-width:668px) and (max-width: 982px) {
+  .all {
+    padding: 1%;
+  }
+  main .musics {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+  main .musics article {
+    width: 100%;
+    margin: 0 auto;
+    max-width: none;
+    background-color: #fff;
+    border: 1px solid #0066ff;
+    margin-bottom:5px;
+    color: #333;
+    font-size: 1.2em;
+    border-top-left-radius: 8px 8px;
+    border-top-right-radius: 8px 8px;
+    border-bottom-right-radius: 8px 8px;
+    border-bottom-left-radius: 8px 8px;
+  }
 
+  main .musics article h4 {
+    width: auto;
+    position: static;
+    display: inline-block;
+    background-color: unset;
+    text-align: none;
+    color: #333;
+  }
+  main .musics article .mask {
+    opacity: 1;
+    background-color: unset;
+    width: 100%;
+    position: static;
+    text-align: left;
+    display: inline;
+
+  }
+  main .music:hover .mask {
+    padding-bottom: 0;
+  }
+  main .musics article img {
+    width: 30%;
+    float: right;
+    margin-left: 10px;
+  }
+  main .musics article span a {
+    display: none;
+  }
+  main .musics article .audio {
+    bottom: 0;
+  }
+  main .musics article audio {
+    width: 100%;
+    position: static;
+  }
+  main .musics article .type {
+    display: none;
+  }
+
+}
+/* レスポンシブ　タブレット用　ここまで*/
 
 /* レスポンシブ　スマホ用　ここから*/
 @media screen and (max-width: 667px) {
