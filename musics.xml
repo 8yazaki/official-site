@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <music_list>
 	<music>
+		<title>今日の靴</title>
+		<comment>pixivFANBOXで先行公開した動画の原曲です</comment>
+		<mp3>20190415_todays shoes.mp3</mp3>
+		<jacket>20190415_todays shoes.png</jacket>
+		<type>pixivFANBOX</type>
+		<createdate>
+			<year>2019</year>
+			<month>04</month>
+			<day>15</day>
+		</createdate>
+	</music>
+	<music>
 		<title>海中の睡眠</title>
-		<comment>YouTubeで公開した動画の原曲です</comment>
+		<comment>pixivFANBOXで先行公開した動画の原曲です</comment>
 		<mp3>20190304_sleepingsea.mp3</mp3>
 		<jacket>sleepingsea.png</jacket>
-		<type>自主制作</type>
+		<type>pixivFANBOX</type>
 		<createdate>
 			<year>2019</year>
 			<month>03</month>
@@ -26,10 +38,10 @@
 	</music>
 	<music>
 		<title>癒やしのBGM 432Hz</title>
-		<comment>YouTubeで公開した動画の原曲です</comment>
+		<comment>pixivFANBOXで先行公開した動画の原曲です</comment>
 		<mp3>20190226_iyashi432hz.mp3</mp3>
 		<jacket>20190226_iyashi432hz.jpg</jacket>
-		<type>自主制作</type>
+		<type>pixivFANBOX</type>
 		<createdate>
 			<year>2019</year>
 			<month>02</month>
