@@ -252,6 +252,11 @@ main {
   float: left;
   width: calc(100% - 396px);
 }
+main .allplay audio {
+  display: inline-block;
+  text-align: center;
+  line-height: 80px;
+}
 main .musics {
   width: 100%;
   box-sizing: border-box;
@@ -350,7 +355,7 @@ main .musics article .type {
   top: 0;
   right: 0;
   border-top: 50px solid #0000007d;
-  border-right: 50px solid #0000007d;
+  border-right: 53px solid #0000007d;
   border-bottom: 50px solid transparent;
   border-left: 50px solid transparent;
 }
