@@ -267,7 +267,7 @@ main .musics h2 {
 }
 main .musics article {
   float: left;
-  overflow: auto;
+  overflow: hidden;
   height: auto;
   box-sizing: border-box;
   padding: 8px;
@@ -355,7 +355,7 @@ main .musics article .type {
   top: 0;
   right: 0;
   border-top: 50px solid #0000007d;
-  border-right: 55px solid #0000007d;
+  border-right: 50px solid #0000007d;
   border-bottom: 50px solid transparent;
   border-left: 50px solid transparent;
 }
@@ -365,7 +365,7 @@ main .musics article .type div {
   top:-1.5vw;
   right: -4.5vw;
   width: 7vw;
-  font-size: 0.9vw;
+  font-size: 0.5vw;
   color: #fff;
   display: inline-block;
   text-align: center;
