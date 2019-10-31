@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <music_list>
 	<music>
+		<title>未来へ</title>
+		<comment>pixivFANBOXで先行公開した動画の原曲です</comment>
+		<mp3>20190512_to-future.mp3</mp3>
+		<jacket>20190512_to-future.png</jacket>
+		<type>pixivFANBOX</type>
+		<createdate>
+			<year>2019</year>
+			<month>05</month>
+			<day>21</day>
+		</createdate>
+	</music>
+	<music>
 		<title>今日の靴</title>
 		<comment>pixivFANBOXで先行公開した動画の原曲です</comment>
 		<mp3>20190415_todays shoes.mp3</mp3>
