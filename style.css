@@ -203,15 +203,15 @@ header .coconala {
 }
 .newsong li a {
   font-size: 0.8em;
-	text-align: center;
-	display: inline-block;
-	width: 50%;
-	padding: 5px 0 0 10px;
-	background-color: #0066ff;
-	color: #fff;
-	font-weight: bold;
-	text-decoration: none;
-	border-top-left-radius: 30px 30px;
+  text-align: center;
+  display: inline-block;
+  width: 50%;
+  padding: 5px 0 0 10px;
+  background-color: #0066ff;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-top-left-radius: 30px 30px;
   border-top-right-radius: 30px 30px;
   border-bottom-right-radius: 30px 30px;
   border-bottom-left-radius: 30px 30px;
@@ -321,7 +321,7 @@ main .musics article .mask {
   padding-bottom: 15px;
   /* color: #fff; */
   -webkit-transition:	all 0.5s ease;
-	transition:		all 0.5s ease;
+  transition:		all 0.5s ease;
   border-top-left-radius: 8px 8px;
   border-top-right-radius: 8px 8px;
 }
@@ -336,15 +336,15 @@ main .musics article .mask p {
 }
 main .musics article span a {
   font-size: 0.8em;
-	text-align: center;
-	display: inline-block;
-	width: 80%;
-	padding: 5px 0;
-	background-color: #0166ff;
-	color: #fff;
-	font-weight: bold;
-	text-decoration: none;
-	border-top-left-radius: 30px 30px;
+  text-align: center;
+  display: inline-block;
+  width: 80%;
+  padding: 5px 0;
+  background-color: #0166ff;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-top-left-radius: 30px 30px;
   border-top-right-radius: 30px 30px;
   border-bottom-right-radius: 30px 30px;
   border-bottom-left-radius: 30px 30px;
@@ -524,7 +524,7 @@ footer p {
     position: static;
     text-align: left;
     display: inline;
-
+    
   }
   main .music:hover .mask {
     padding-bottom: 0;
