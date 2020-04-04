@@ -2,3 +2,6 @@
 .gitgnore
 .DS_store
 music/
+.vscode/sftp.json
+vue-index.html
+musics.json
